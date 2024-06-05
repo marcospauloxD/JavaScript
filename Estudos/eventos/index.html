@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos com o teclado e com o mouse</h1>
+
+    <button onclick="clique()">um clique</button><br><br>
+
+    <button ondblclick="cliqueDuplo()">clique duplo</button><br><br>
+
+    <button onmouseover="mouseEmCima()">passe o mouse aqui</button><br><br>
+
+    <button onmouseout="mouseFora()">tire o mouse de cima</button><br><br>
+
+    <div id="teste" onmouseover="viraVermelho()" onmouseout="viraBranco()" style="margin:auto auto; width:  80%; height: 200px; background-color: yellow;"></div>
+
+    <input
+    id="campoTexto" onkeydown="onKeyDown()"
+    style="padding: 80px; font-size: 40px;" type="text" placeholder="Digite algo">
+
+    
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
